@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimePath RCM | Medical Billing &amp; Revenue Cycle Management</title>
+<meta name="description" content="PrimePath RCM delivers precise, transparent medical billing for healthcare practices — flat 2.99% billing, based in Miami, Florida.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Progress path (signature element) ===== -->
+<div class="claim-path" aria-hidden="true"><div class="claim-path__fill" id="claimPathFill"></div></div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header__inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="PrimePath RCM logo" class="brand__logo">
+      <span class="brand__word">PRIME<em>PATH</em> <small>RCM</small></span>
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <div class="nav__dropdown">
+        <button class="nav__dropdown-toggle" id="servicesToggle" aria-expanded="false">
+          Services
+          <svg class="nav__chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <div class="nav__dropdown-menu">
+          <a href="#mission">Claims &amp; Coding</a>
+          <a href="#mission">Denial Management</a>
+          <a href="#mission">Patient Billing</a>
+          <a href="#mission">Reporting</a>
+        </div>
+      </div>
+      <a href="#contact">Contact Us</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Schedule a Demo <span class="nav__cta-arrow">&rarr;</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="circuit-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="circuitTile" width="220" height="220" patternUnits="userSpaceOnUse">
+            <path class="circuit-line" d="M0 40 H70 V0" />
+            <path class="circuit-line" d="M70 40 V110 H160" />
+            <path class="circuit-line" d="M160 110 V220" />
+            <path class="circuit-line" d="M0 160 H60 V220" />
+            <path class="circuit-line" d="M60 160 H130 V90 H220" />
+            <path class="circuit-line" d="M130 160 V220" />
+            <path class="circuit-line" d="M180 0 V50 H220" />
+            <circle class="circuit-node" cx="70" cy="40" r="3.4" />
+            <circle class="circuit-node" cx="160" cy="110" r="3.4" />
+            <circle class="circuit-node" cx="60" cy="160" r="3.4" />
+            <circle class="circuit-node" cx="130" cy="90" r="3.4" />
+            <circle class="circuit-node" cx="180" cy="50" r="3.4" />
+          </pattern>
+          <radialGradient id="heroFade" cx="50%" cy="35%" r="75%">
+            <stop offset="0%" stop-color="#0B1E3D" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0B1E3D" stop-opacity="0.85"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#circuitTile)" />
+        <rect width="100%" height="100%" fill="url(#heroFade)" />
+      </svg>
+      <div class="hero__glow hero__glow--a"></div>
+      <div class="hero__glow hero__glow--b"></div>
+    </div>
+
+    <div class="wrap hero__inner">
+      <p class="eyebrow eyebrow--light">Medical Billing &amp; Revenue Cycle Management — Miami, FL</p>
+      <h1 class="hero__title hero__title--dark">
+        Complete Revenue Cycle<br>
+        Management <span class="hero__title-accent">@2.99%</span>
+      </h1>
+      <p class="hero__services">
+        <span>Medical Billing</span><span class="hero__services-dot">&bull;</span><span>Credentialing</span><span class="hero__services-dot">&bull;</span><span>Coding</span>
+      </p>
+      <p class="hero__lede hero__lede--dark">
+        PrimePath RCM turns tangled claims, denials, and delayed reimbursements into a clean,
+        trackable route from patient visit to payment posted — so your practice gets paid for
+        the care it already gave.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Schedule a Demo &rarr;</a>
+        <a href="#mission" class="btn btn--outline-light">See Our Rate — 2.99%</a>
+      </div>
+      <div class="hero__stats hero__stats--dark">
+        <div class="stat"><span class="stat__num stat__num--light">2.99<small>%</small></span><span class="stat__label stat__label--light">Flat billing rate</span></div>
+        <div class="stat"><span class="stat__num stat__num--light">24/7</span><span class="stat__label stat__label--light">Claims monitoring</span></div>
+        <div class="stat"><span class="stat__num stat__num--light">MIA</span><span class="stat__label stat__label--light">Miami, Florida HQ</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="wrap about__inner">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--dark">01 — About PrimePath RCM</p>
+        <h2>Built for the practices that don't have time to chase their own money.</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__purpose">
+          <h3>Our Purpose</h3>
+          <p>
+            Healthcare providers exist to treat patients — not to spend their evenings decoding
+            payer rejection codes. PrimePath RCM exists to close that gap. Our purpose is simple:
+            take full ownership of the billing cycle — from eligibility checks and clean claim
+            submission through denial management and payment posting — so every dollar a practice
+            earns actually reaches its account, on time and in full.
+          </p>
+          <p>
+            We were founded on a frustration shared by nearly every independent clinic, specialty
+            practice, and solo provider we've spoken with: billing errors and slow reimbursements
+            quietly bleed revenue that never gets noticed until it's a real problem. PrimePath RCM
+            was built to be the fix — a dedicated, accountable billing partner that treats a
+            client's cash flow with the same urgency as its own.
+          </p>
+        </div>
+
+        <div class="about__intro">
+          <h3>Introduction</h3>
+          <p>
+            PrimePath RCM is a Miami, Florida–based medical billing and revenue cycle management
+            company serving physicians, clinics, and specialty healthcare providers across the
+            United States. We combine certified billing expertise, payer-specific claim
+            scrubbing, and transparent reporting into one straightforward service — with no
+            hidden fees and no long-term lock-in.
+          </p>
+          <p>
+            From patient intake to final reimbursement, our team manages the entire revenue
+            cycle: insurance verification, coding accuracy review, claims submission, rejection
+            and denial follow-up, patient statements, and monthly financial reporting. Practices
+            that work with us typically see faster turnaround on claims, fewer denials, and a
+            clearer picture of exactly where their revenue stands at any moment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOUNDER ===== -->
+  <section class="section founder" id="founder">
+    <div class="wrap founder__inner">
+      <div class="founder__photo-wrap">
+        <img src="assets/founder.png" alt="Portrait of the Founder and CEO of PrimePath RCM" class="founder__photo">
+        <div class="founder__photo-frame" aria-hidden="true"></div>
+      </div>
+      <div class="founder__content">
+        <p class="eyebrow eyebrow--dark">02 — Leadership</p>
+        <h2>A billing company led by someone who answers the phone.</h2>
+        <p>
+          PrimePath RCM was founded on the belief that healthcare providers deserve a billing
+          partner who is reachable, accountable, and genuinely invested in their financial
+          health — not a call center reading from a script. Every account is treated as a
+          direct relationship, not a ticket number.
+        </p>
+        <div class="founder__signature">
+          <span class="founder__name">Umer Ayoub</span>
+          <span class="founder__title">Founder &amp; Chief Executive Officer, PrimePath RCM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISSION / OFFERING ===== -->
+  <section class="section mission" id="mission">
+    <div class="wrap">
+      <div class="section-head section-head--center">
+        <p class="eyebrow eyebrow--light">03 — Our Mission &amp; Offering</p>
+        <h2>Medical billing at a flat 2.99% — nothing hidden, nothing extra.</h2>
+      </div>
+
+      <div class="mission__content">
+        <p class="mission__lede">
+          Our mission is to give every healthcare provider we work with full financial clarity
+          and stronger cash flow, without adding a single hour to their administrative burden.
+          We believe billing pricing should be as transparent as the claims we submit — which is
+          why PrimePath RCM offers complete medical billing services for a flat
+          <strong>2.99% of monthly collections</strong>, with no setup fees, no software
+          licensing charges, and no surprise add-ons buried in the fine print.
+        </p>
+        <p>
+          That single rate covers the full revenue cycle: real-time insurance eligibility
+          verification, accurate CPT/ICD-10 coding review, clean-claim submission within 24
+          hours of encounter, proactive denial and rejection management, patient billing and
+          statement support, monthly reconciliation, and a dedicated account manager who
+          reports directly to your practice. We only succeed when your collections grow — so
+          our incentives are permanently aligned with yours.
+        </p>
+
+        <div class="mission__grid">
+          <div class="offer-card">
+            <span class="offer-card__num">01</span>
+            <h3>Claims &amp; Coding</h3>
+            <p>Eligibility checks, accurate coding review, and clean claims submitted within 24 hours.</p>
+          </div>
+          <div class="offer-card">
+            <span class="offer-card__num">02</span>
+            <h3>Denial Management</h3>
+            <p>Rejections and denials tracked, appealed, and resolved before they become lost revenue.</p>
+          </div>
+          <div class="offer-card">
+            <span class="offer-card__num">03</span>
+            <h3>Patient Billing</h3>
+            <p>Clear statements and responsive support that keep patients informed, not frustrated.</p>
+          </div>
+          <div class="offer-card">
+            <span class="offer-card__num">04</span>
+            <h3>Reporting</h3>
+            <p>Monthly reconciliation and a dedicated account manager so you always know your numbers.</p>
+          </div>
+        </div>
+
+        <div class="rate-badge">
+          <span class="rate-badge__figure">2.99<small>%</small></span>
+          <span class="rate-badge__text">Flat billing rate.<br>No hidden fees. No setup cost.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact__inner">
+      <div class="section-head">
+        <p class="eyebrow eyebrow--dark">04 — Contact Us</p>
+        <h2>Let's put your revenue cycle back on a straight path.</h2>
+        <p class="contact__sub">Reach out for a free billing review — most practices hear back the same business day.</p>
+      </div>
+
+      <div class="contact__grid">
+        <a class="contact__card" href="tel:+923111860586">
+          <span class="contact__label">Call</span>
+          <span class="contact__value">0311-1860586</span>
+        </a>
+        <a class="contact__card" href="tel:+923460549420">
+          <span class="contact__label">Call</span>
+          <span class="contact__value">0346-0549420</span>
+        </a>
+        <a class="contact__card" href="mailto:umerayoub586@gmail.com">
+          <span class="contact__label">Email</span>
+          <span class="contact__value contact__value--email">umerayoub586@gmail.com</span>
+        </a>
+        <div class="contact__card contact__card--address">
+          <span class="contact__label">Office</span>
+          <span class="contact__value">Miami, Florida, USA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="PrimePath RCM logo" class="footer__logo">
+      <span>PRIME<em>PATH</em> RCM</span>
+    </div>
+    <p class="footer__tag">Medical Billing &amp; Revenue Cycle Management — Miami, Florida</p>
+    <p class="footer__copy">&copy; <span id="year"></span> PrimePath RCM. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ===== Floating contact bubble ===== -->
+<a href="tel:+923111860586" class="float-cta" aria-label="Call PrimePath RCM">
+  <span class="float-cta__ring"></span>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" fill="currentColor"/>
+  </svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
